@@ -28,7 +28,7 @@ function Index() {
 							<img src={item.image} alt={item.title} />
 						</figure>
 						<h1 className='text-2xl font-medium'>{item.title}</h1>
-						<h6 className='opacity-60'>{item.compatible}</h6>
+						<h2 className='opacity-60'>{item.compatible}</h2>
 
 						<hr className='hrDotted' />
 
