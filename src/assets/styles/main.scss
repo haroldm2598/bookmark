@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$primary--100: hsl(231, 69%, 60%);
+$primary--200: hsl(0, 94%, 66%);
+$neutral--100: hsl(229, 8%, 60%);
+$neutral--200: hsl(229, 31%, 21%);
+
+$rubik: 'Rubik', sans-serif;
+// - Font size: 18px
+// - Weights: 400, 500
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	font-family: $rubik;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.navbarBg {
+	transition: all 500ms ease-in-out;
+	&:hover {
+		color: $primary--200;
+	}
+}
+
+.footerBg {
+	background-color: $neutral--200;
+}
+
+// Buttons
+.loginBtn {
+	background-color: $primary--200;
+	border-color: $primary--200;
+	color: #ffffff;
+
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		background-color: #ffffff;
+		border-color: $primary--200;
+		color: $primary--200;
+	}
+}
+.heroBtn {
+	background-color: $primary--100;
+	border-color: $primary--100;
+	color: #ffffff;
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		background-color: #ffffff;
+		border-color: $primary--100;
+		color: $primary--100;
+	}
+}
+
+.heroBtnOut {
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		background-color: #ffffff;
+		border-color: $neutral--100;
+	}
+}
+
+.downloadHover {
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		transform: translateY(-2em);
+	}
+}
+
+.questionCollapse {
+	transition: all 500ms ease-in-out;
+
+	&:hover {
+		color: $primary--200;
+	}
+}
+
+// Background shape
+.bgShape {
+	border-radius: 0px 0px 0px 200px;
+	-webkit-border-radius: 0px 0px 0px 200px;
+	-moz-border-radius: 0px 0px 0px 200px;
+	background: $primary--100;
+	// height: 70%;
+}
+
+.hrDotted {
+	width: 100%;
+	border-top: 4px dashed $neutral--100;
+	opacity: 30%;
+}
+
+.contact {
+	background-color: $primary--100;
+}
