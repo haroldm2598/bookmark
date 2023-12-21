@@ -14,8 +14,8 @@ function Index() {
 			<nav className='navbar-end hidden lg:flex'>
 				<ul className='menu menu-horizontal px-1 gap-10'>
 					{navLinks?.map((item, index) => (
-						<li key={index} className='navbarBg py-2'>
-							<a>{item}</a>
+						<li key={index} className='navbarBg py-2 text-lg cursor-pointer'>
+							{item}
 						</li>
 					))}
 
