@@ -12,15 +12,15 @@ function Index() {
 			</section>
 
 			<nav className='navbar-end hidden lg:flex'>
-				<ul className='menu menu-horizontal px-1 gap-10'>
+				<ul className='menu menu-horizontal px-1 mr-10 gap-10'>
 					{navLinks?.map((item, index) => (
 						<li key={index} className='navbarBg py-2 text-lg cursor-pointer'>
 							{item}
 						</li>
 					))}
-
-					<Button name='Login' customClass='loginBtn w-44' />
 				</ul>
+
+				<Button name='Login' customClass='loginBtn w-44' />
 			</nav>
 
 			<section className='navbar-end flex lg:hidden'>
